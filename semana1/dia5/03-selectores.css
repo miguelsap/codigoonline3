@@ -1,0 +1,24 @@
+/* Selector de etiqueta */
+/* Todos los h2 de la pagina */
+label {
+  color: teal;
+}
+/* compartiendo atributos */
+/* Estilo que afecta a trodos los H1 y H2 */
+h2,
+h1 {
+  color: green;
+}
+
+/* Selector de hijos a cualquier nivel */
+/* Todos los hijos que sean LI y esten dentro de un UL */
+ul li {
+  color: red;
+}
+
+/* Selector de hijos en primer nivel */
+/* o selector de hijos directos */
+ol > li,
+input {
+  color: blue;
+}
