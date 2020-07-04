@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.section1 {
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+  box-shadow: #bbb 0px 0px 20px;
+  margin: 50px auto 0 auto;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.section1:hover {
+  border-radius: 5px;
+}
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  transition: all 2s ease-out;
+}
+.section1:hover .cuadrado {
+  border-radius: 50%;
+  margin: 0 0 0 200px;
+}
+.section2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+  box-shadow: #bbb 0px 0px 20px;
+  margin: 50px auto 0 auto;
+  overflow: hidden;
+  transition: all 1.5s linear;
+}
+.section:hover {
+  box-shadow: rgb(163, 6, 27), 0px 0px 20px;
+}
+.persiana {
+  background-color: crimson;
+  transition: all 3s linear;
+  height: 0px;
+}
+/* Cuando se este haciendo hover en el .section1
+el elemento interno que lleve la clase .cuadrado
+sufrira los cambios */
+.section2:hover .persiana {
+  height: 500px;
+}
