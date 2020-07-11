@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background-color: #444;
+  color: white;
+}
+/* Como se alinean los elementos en el eje principal */
+/* justify-content */
+/* Como se alinean los elementos en el eje secundario */
+/* align-items */
+.main {
+  display: flex;
+  height: 500px;
+  border: 1px solid white;
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.section1 {
+  background-color: tomato;
+  width: 200px;
+  height: 200px;
+}
+.section2 {
+  background-color: rebeccapurple;
+  width: 200px;
+  height: 200px;
+}
+.section3 {
+  background-color: pink;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bolita {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+.main2 {
+  display: flex;
+  height: 300px;
+  width: 50%;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* flex-direction: column; */
+}
+.section4 {
+  width: 100px;
+  height: 100px;
+  background-color: #bbb;
+}
