@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+.padre {
+  background-color: crimson;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hijo1 {
+  background-color: dodgerblue;
+  width: 100px;
+  height: 200px;
+}
+.hijo2 {
+  background-color: gold;
+  width: 100px;
+  height: 200px;
+}
+.padre2 {
+  background-color: crimson;
+  height: 500px;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+.hijo3 {
+  background-color: dodgerblue;
+  width: 50%;
+  height: 250px;
+}
+.hijo4 {
+  background-color: gold;
+  width: 50%;
+  height: 250px;
+}
+.padre3 {
+  height: 500px;
+  width: 80%;
+  display: flex;
+  background-color: crimson;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.padre3 > article {
+  min-width: 300px;
+  margin: 0 10px;
+}
+.hijo5 {
+  background-color: dodgerblue;
+  width: calc(50% -20px);
+  height: 100px;
+}
+.hijo6 {
+  background-color: gold;
+  width: calc(50% -20px);
+  height: 100px;
+}
+.hijo7 {
+  background-color: dodgerblue;
+  width: calc(50% -20px);
+  height: 100px;
+}
+.hijo8 {
+  background-color: gold;
+  width: calc(50% -20px);
+  height: 100px;
+}
+.hijo9 {
+  background-color: dodgerblue;
+  width: calc(50% -20px);
+  height: 100px;
+}
+.hijo10 {
+  background-color: gold;
+  width: calc(50% -20px);
+  height: 100px;
+}
