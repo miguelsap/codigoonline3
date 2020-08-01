@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #eee;
+      }
+      form,
+      .contenedor {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #888;
+        width: 500px;
+        margin: 20px auto;
+      }
+      form input[type="text"] {
+        width: 100%;
+      }
+      .contenedor > table {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="formulario">
+      <p>
+        <label for="">Codigo de Producto</label>
+        <input type="text" id="inputCodigo" name="codigo" />
+      </p>
+      <p>
+        <label for="">Nombre de Producto</label>
+        <input type="text" id="inputNombre" name="nombre" />
+      </p>
+      <input type="submit" value="Agregar Producto" />
+    </form>
+    <hr />
+    <section class="contenedor">
+      <table border="1">
+        <thead>
+          <tr>
+            <th><strong>#</strong></th>
+            <th>Codigo</th>
+            <th>Nombre</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </section>
+    <script src="./02-localstorage.js"></script>
+  </body>
+</html>

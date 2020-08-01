@@ -10,7 +10,8 @@ let poblarPaises = () => {
 };
 
 let poblarDepartamentos = (index) => {
-  let options = "";
+  let options =
+    "<option value = 0> --- Seleccione un departamento ---</option>";
   departamentos.forEach((objDepa) => {
     if (objDepa.paisId.toString() === index) {
       options += `<option value="${objDepa.id}">${objDepa.nombre}</option>`;
