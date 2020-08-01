@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./data-usuarios.js"></script>
+    <script src="./02-eventos-formularios.js"></script>
+  </head>
+  <style>
+    body {
+      background-color: #eee;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #888;
+      width: 500px;
+      margin: 20px auto;
+    }
+    form input {
+      width: 100%;
+    }
+    .text-success {
+      color: #30a720;
+    }
+    .text-danger {
+      color: crimson;
+    }
+    .input-success {
+      border: 1px solid #30a720;
+      outline: 1px solid #30a720;
+    }
+    .input-danger {
+      border: 1px solid crimson;
+      outline: 1px solid crimson;
+    }
+  </style>
+  <body>
+    <form id="formulario">
+      <p>
+        <label for="input">Usuario</label>
+        <input type="email" id="inputEmail" />
+        <small id="helperEmail"></small>
+      </p>
+      <p>
+        <label for="password">Contraseña</label>
+        <input type="password" id="Inputpassword" />
+      </p>
+      <button>Iniciar Sesion</button>
+      <a href="#" id="enlace">Olvidaste tu contraseña?</a>
+    </form>
+  </body>
+</html>

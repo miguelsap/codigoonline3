@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./01-eventos-light.css" />
+    <link rel="stylesheet" href="" id="linkDark" />
+    <title>Document</title>
+    <style>
+      .cuadrado {
+        width: 200px;
+        height: 200px;
+        background-color: crimson;
+        margin: 20px auto;
+        position: relative;
+      }
+      .circulo {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: yellow;
+        position: absolute;
+        pointer-events: none;
+      }
+      .sombra {
+        box-shadow: 0 0 20px #888;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__contenedor">
+        <div class="header__logo">
+          <img src="./logo.svg" alt="logo" />
+        </div>
+        <nav class="header__navegacion">
+          <ul class="header__lista">
+            <li class="header__item">
+              <a href="#" class="header__link">Inicio</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Cursos</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Proyectos</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <button id="btnDark">
+      Estilo Dark
+    </button>
+    <button id="btnLight">
+      Estilo Light
+    </button>
+    <button id="btnToggle" class="btn-toggle">
+      Cambiar Estilo
+    </button>
+    <div class="cuadrado" id="cuadrado"></div>
+    <div class="cuadrado" id="cuadrado2"></div>
+    <div class="cuadrado" id="cuadrado3"></div>
+    <script src="./01-eventos.js"></script>
+  </body>
+</html>

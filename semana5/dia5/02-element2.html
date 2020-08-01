@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+      }
+      header {
+        height: 60px;
+        background-image: linear-gradient(to bottom right, #444, #555);
+      }
+      body {
+        background: #444;
+      }
+      .seccion1 {
+        width: 400px;
+        height: 400px;
+        background: #555;
+        margin: 0 auto;
+      }
+      .botones {
+        margin: 20px 0;
+        text-align: center;
+      }
+      .sombra-light {
+        box-shadow: 0 0 20px #aaa;
+      }
+      .sombra-dark {
+        box-shadow: 0 0 10px #000;
+      }
+      .boton {
+        padding: 20px 10px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      .boton-active {
+        box-shadow: 24px 24px 49px #3a3a3a, -24px -24px 49px #4e4e4e;
+        background: #444444;
+        color: #fff;
+      }
+      .boton-normal {
+        box-shadow: inset 24px 24px 49px #3a3a3a, inset -24px -24px 49px #4e4e4e;
+        background: #444444;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <div class="botones">
+      <button class="boton" id="btnLight">Sombra Light</button>
+      <button class="boton" id="btnDark">Sombra Dark</button>
+      <button class="boton" id="btnToggle">Sombra Toggle</button>
+    </div>
+    <section class="seccion1"></section>
+    <script src="./02-element2.js"></script>
+  </body>
+</html>
