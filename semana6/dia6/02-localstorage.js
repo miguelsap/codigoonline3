@@ -2,6 +2,14 @@ let formulario = document.getElementById("formulario");
 let inputCodigo = document.getElementById("inputCodigo");
 let inputNombre = document.getElementById("inputNombre");
 let tbody = document.getElementById("tbody");
+let inputColor = document.getElementById("inputColor");
+let body = document.querySelector("body");
+let menu = document.getElementById("menu");
+
+inputColor.onchange = () => {
+  body.style.backgroundColor = inputColor.value;
+  localStorage.setItem("color", inputColor.value);
+};
 
 let productos = [];
 
@@ -63,6 +71,21 @@ const verificarStorage = () => {
     productos = productosJSON;
     llenarTabla();
   }
+  let colorStorage = localStorage.getItem("color");
+  if (colorStorage) {
+    body.style.backgroundColor = colorStorage;
+    inputColor.value = colorStorage;
+  }
 };
 
 verificarStorage();
+
+document.querySelector("body").oncontextmenu = (e) => {
+  e.preventDefault();
+  menu.style.left = `${e.clientX}px`;
+  menu.style.top = `${e.clientY}px`;
+  menu.removeAttribute("hidden");
+};
+document.querySelector("body").onclick = () => {
+  menu.setAttribute("hidden", "hidden");
+};

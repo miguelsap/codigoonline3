@@ -7,6 +7,7 @@
     <style>
       body {
         background-color: #eee;
+        min-height: 100vh;
       }
       form,
       .contenedor {
@@ -23,9 +24,30 @@
       .contenedor > table {
         width: 100%;
       }
+      .menu {
+        list-style: none;
+        position: absolute;
+        border-radius: 12px;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        box-shadow: 0 0 12px #888;
+        padding: 0;
+      }
+      .menu__item {
+        background-color: #444;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .menu__item:hover {
+        background-color: #666;
+      }
     </style>
   </head>
   <body>
+    <h2>Preferencias</h2>
+    <input type="color" id="inputColor" />
     <form id="formulario">
       <p>
         <label for="">Codigo de Producto</label>
@@ -50,6 +72,11 @@
         <tbody id="tbody"></tbody>
       </table>
     </section>
+    <ul class="menu" hidden id="menu">
+      <li class="menu__item">Crear Carpeta</li>
+      <li class="menu__item">Crear Archivo</li>
+      <li class="menu__item">Imprimir Pagina</li>
+    </ul>
     <script src="./02-localstorage.js"></script>
   </body>
 </html>
