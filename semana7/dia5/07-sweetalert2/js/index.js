@@ -1,0 +1,20 @@
+Swal.fire({
+  title: "Bienvenido al sistema",
+  text: "Selecciona tu pais",
+  // html: "<b class='rojo'>Ingresa</b>",
+  icon: "question",
+  confirmButtonText: "Seleccionar",
+  footer: "<span class='rojo'>Sistema de prueb</span>",
+  width: "90%",
+  // background: "#ddd",
+  timer: 5000,
+  timerProgressBar: true,
+  input: "select",
+  inputPLaceholder: "Pais",
+  inputValue: "",
+  inputOptions: {
+    peru: "Peru",
+    colombia: "Colombia",
+    mexico: "Mexico",
+  },
+});
