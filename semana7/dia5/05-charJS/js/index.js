@@ -1,6 +1,6 @@
 let ctx = document.getElementById("grafico").getContext("2d");
 let myChart = new Chart(ctx, {
-  type: "line",
+  type: "bar",
   data: {
     labels: ["Peru", "Brasil", "Colombia", "Chile"],
     datasets: [
@@ -41,12 +41,6 @@ let myChart = new Chart(ctx, {
     ],
   },
   options: {
-    legend: {
-      display: true,
-      labels: {
-        fontColor: "#0000ff",
-      },
-    },
     scales: {
       yAxes: [
         {
