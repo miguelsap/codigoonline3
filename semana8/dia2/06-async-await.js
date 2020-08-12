@@ -86,25 +86,27 @@ const getDepartamentosByPaisId = (id) => {
   return buscando;
 };
 
-getPaisById(1)
-  .then((rpta) => {
-    console.log(rpta);
-    getDepartamentosByPaisId(rpta.id)
-      .then((rpta) => {
-        console.log(rpta);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+/**
+ * funcion que retorna tanto el pais como la lista de departamentos
+ * dado el id de un pais
+ */
+const getAllByPaisId = async (id) => {
+  let paisEncontrado = await getPaisById(id);
+  let departamentosFiltrados = await getDepartamentosByPaisId(id);
+  return {
+    paisEncontrado: paisEncontrado,
+    departamentosFiltrados: departamentosFiltrados,
+  };
+};
 
-// getDepartamentosByPaisId(1)
-//   .then((rpta) => {
-//     console.log(rpta);
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
+getAllByPaisId(1).then((rptaFinal) => {
+  console.log(rptaFinal);
+});
+
+const funcionAsincrona = async () => {
+  return 100;
+};
+
+funcionAsincrona().then((valor) => {
+  console.log(valor);
+});
